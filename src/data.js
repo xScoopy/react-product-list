@@ -1,5 +1,5 @@
-import data from './data.json'
-
+// import data from './data.json'
+const data = require('./data.json')
 //grab the category from each object
 const allCategories = data.map(obj => obj.category)
 
@@ -12,8 +12,12 @@ const categoriesWithCounts = data.reduce((obj, cat) => {
     if (!obj[category]) {
         obj[category] = 0
     }
-    obj[category] = obj[category]++
+    obj[category] = obj[category]+=1
     return obj
 }, {})
 
-export default data
+console.log(categorySet)
+console.log(categoriesUnique)
+console.log(categoriesWithCounts)
+
+// export default data
