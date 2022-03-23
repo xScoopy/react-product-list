@@ -9,10 +9,10 @@ const categoriesUnique = Array.from(categorySet)
 
 const categoriesWithCounts = data.reduce((obj, cat) => {
     const category = cat.category
-    if (!obj.category) {
-        obj.category = 0
+    if (!obj[category]) {
+        obj[category] = 0
     }
-    obj.category = obj.category++
+    obj[category] = obj[category]++
     return obj
 }, {})
 
