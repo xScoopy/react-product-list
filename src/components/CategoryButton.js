@@ -1,6 +1,6 @@
 const CategoryButton = (props) => {
     return (
-        <button>{props.name}</button>
+        <button onClick={props.onClick}>{props.name}</button>
     )
 }
 export default CategoryButton
