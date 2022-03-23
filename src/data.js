@@ -28,4 +28,4 @@ const namesAndCategories = categoriesUnique.map(name => {
 
 
 export default data
-export { allCategories, categoriesUnique, namesAndCategories}
+export { allCategories, categoriesUnique, namesAndCategories, categoriesWithCounts}
