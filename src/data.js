@@ -7,7 +7,8 @@ const allCategories = data.map(obj => obj.category)
 const categorySet = new Set(allCategories)
 const categoriesUnique = Array.from(categorySet)
 
-const categoriesWithCounts = data.reduce((obj, category) => {
+const categoriesWithCounts = data.reduce((obj, cat) => {
+    const category = cat.category
     if (!obj.category) {
         obj.category = 0
     }
