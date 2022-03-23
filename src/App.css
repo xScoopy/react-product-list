@@ -36,6 +36,9 @@ body{
   justify-content: center;
   text-align: center;
   color:white;
+  border-style: dashed;
+  border-color: white;
+  border-width: 2px;
 }
 .selected{
   background-color:gray;
